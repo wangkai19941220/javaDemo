@@ -23,5 +23,5 @@ import java.lang.annotation.Target;
 @Documented
 @Inherited
 public @interface MyLog {
-    String requestUrl();
+    String requestUrl() default "";
 }

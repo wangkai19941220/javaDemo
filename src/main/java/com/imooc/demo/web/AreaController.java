@@ -32,6 +32,13 @@ public class AreaController {
         modelMap.put("areaList",list);
         return modelMap;
     }
+    //@MyLog(requestUrl = "/index请求")
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    private String list(){
+        //List<Area> list=areaService.getAreaList();
+System.out.println("33");
+        return "index";
+    }
 
     /**
      * 查询某个区域
